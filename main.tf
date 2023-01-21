@@ -5,12 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-locals {
-  tags = {
-    Terraform = "true"
-  }
-}
-
 resource "aws_key_pair" "this" {
   key_name        = var.key_name
   key_name_prefix = var.key_name_prefix
