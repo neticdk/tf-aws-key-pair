@@ -2,13 +2,13 @@
 
 ## Supported Terraform Versions
 
-Terraform 0.12
+Terraform >= 1.15, AWS provider ~> 6.0
 
 ## Usage
 
 ```hcl
 module "instance_access" {
-  source = "github.com/neticdk/tf-aws-key-pair"
+  source = "github.com/neticdk/tf-aws-key-pair?ref=v2.0.0"
 
   key_name   = "instance-access"
   public_key = "ssh-rsa AAAAB3N..."
